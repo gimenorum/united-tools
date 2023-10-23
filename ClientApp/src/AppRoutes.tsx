@@ -1,5 +1,7 @@
 import React from "react";
 import { ReactNode } from "react";
+import Home from "./pages/Home";
+import DailyNote from "./pages/DailyNote";
 
 interface AppRoute{
   element: ReactNode;
@@ -9,8 +11,12 @@ interface AppRoute{
 
 const AppRoutes: AppRoute[] = [
   {
-    element: <p>test</p>,
+    element: <Home />,
     index: true
+  },
+  {
+    element: <DailyNote />,
+    path: "/dailyNote"
   }
 ];
 
